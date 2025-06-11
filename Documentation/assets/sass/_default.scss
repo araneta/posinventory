@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --font-primary: "Roboto", sans-serif;
+  --color-primary: #3725bd;
+  --color-primary-light: rgba(55, 37, 189, 0.1);
+  --color-primary-text: #fff;
+  --color-secondary: #fdc500;
+  --text-primary: #15192c;
+  --text-secondary: #666;
+  --border-light: #ebebeb;
+  --border-dark: #414141;
+  --border-light-two: #e3e3e3;
+  --color-white: #fff;
+  --color-gray-1: #eff2f7;
+  --color-dark: #222222;
+  --color-dark-2: #1d1d1d;
+  --site-bg: #faf9ff;
+  --sidebar-bg: #fff;
+}
+
+// SASS ROOT VARIABLES
+$font-primary: var(--font-primary);
+$color-primary: var(--color-primary);
+$color-primary-light: var(--color-primary-light);
+$color-primary-text: var(--color-primary-text);
+$color-secondary: var(--color-secondary);
+$text-primary: var(--text-primary);
+$text-secondary: var(--text-secondary);
+$text-light: var(--text-light);
+$border-light: var(--border-light);
+$border-dark: var(--border-dark);
+$border-light-two: var(--border-light-two);
+$color-gray-1: var(--color-gray-1);
+$color-dark: var(--color-dark);
+$color-dark-2: var(--color-dark-2);
+$color-white: var(--color-white);
+$site-bg: var(--site-bg);
+$sidebar-bg: var(--sidebar-bg);
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $text-primary;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+p {
+  color: $text-secondary;
+  margin-bottom: 0;
+}
+r a,
+a:active,
+a:visited,
+a:link {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+  font-weight: 400;
+  color: $text-secondary;
+  font-family: $font-primary;
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}

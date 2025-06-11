@@ -1,0 +1,2644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./assets/icon.png" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="./assets/css/simplebar.css" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <title>Documentation of PrimeStock</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-container">
+        <div class="header-logo">
+          <a href="index.html">
+            <img alt="image" class="img-fluid" src="./assets/logo.png" />
+          </a>
+        </div>
+
+        <div class="nav-right d-flex jsutify-content-end align-items-center gap-5">
+          <div class="d-flex align-items-center gap-4">
+            <div class="d-lg-block d-none">
+              <a href="https://support.pixelprimesoft.xyz/" target="_blank"
+                class="i-btn btn--primary-outline btn--lg capsuled">
+                Get Support
+              </a>
+            </div>
+
+            <div class="d-lg-block d-none">
+              <a target="_blank" href="https://primestock.pixelprimesoft.xyz/"
+                class="i-btn btn--primary btn--lg capsuled">
+                Demo
+              </a>
+            </div>
+
+            <div class="mobile-menu-btn d-lg-none">
+              <i class="bi bi-list"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-content">
+    <div class="container">
+      <div class="row g-0">
+        <div class="col-auto">
+          <aside class="aside" data-simplebar>
+            <div class="sidebar-content">
+              <div class="nav flex-column nav-pills gap-1" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <h5>Getting Started</h5>
+                <a class="nav-link active" id="overview-tab" data-bs-toggle="pill" href="#overview" role="tab"
+                  aria-controls="overview" aria-selected="false" tabindex="-1">Overview</a>
+
+                <a class="nav-link" id="changelog-tab" data-bs-toggle="pill" href="#changelog" role="tab"
+                  aria-controls="changelog" aria-selected="false" tabindex="-1">Changelog</a>
+
+                <h5>Requirements</h5>
+                <a class="nav-link" id="server-tab" data-bs-toggle="pill" href="#server" role="tab"
+                  aria-controls="server" aria-selected="false" tabindex="-1">Server Requirements</a>
+
+                <h5>Installation Process</h5>
+                <a class="nav-link" id="localhost-tab" data-bs-toggle="pill" href="#localhost" role="tab"
+                  aria-controls="localhost" aria-selected="false" tabindex="-1">Offline Install</a>
+
+                <a class="nav-link" id="cpanel-tab" data-bs-toggle="pill" href="#cpanel" role="tab"
+                  aria-controls="cpanel" aria-selected="false" tabindex="-1">cPanel Install</a>
+
+                <h5>Product Management</h5>
+                <a class="nav-link" id="update_file_upload-tab" data-bs-toggle="pill" href="#category" role="tab"
+                  aria-controls="update_file_upload" aria-selected="false" tabindex="-1">Category</a>
+
+                <a class="nav-link" id="processed_update-tab" data-bs-toggle="pill" href="#brand" role="tab"
+                  aria-controls="processed_update" aria-selected="false" tabindex="-1">Brand</a>
+
+                <a class="nav-link" id="processed_update-tab" data-bs-toggle="pill" href="#unit" role="tab"
+                  aria-controls="processed_update" aria-selected="false" tabindex="-1">Units</a>
+
+                <a class="nav-link" id="processed_update-tab" data-bs-toggle="pill" href="#variation" role="tab"
+                  aria-controls="processed_update" aria-selected="false" tabindex="-1">Variation</a>
+
+                <a class="nav-link" id="processed_update-tab" data-bs-toggle="pill" href="#product" role="tab"
+                  aria-controls="processed_update" aria-selected="false" tabindex="-1">Product</a>
+
+                <a class="nav-link" id="processed_update-tab" data-bs-toggle="pill" href="#print_labels" role="tab"
+                  aria-controls="processed_update" aria-selected="false" tabindex="-1">Print Labels</a>
+
+                <h5>App Settings</h5>
+                <a class="nav-link" id="cronjob-tab" data-bs-toggle="pill" href="#app-settings" role="tab"
+                  aria-controls="cronjob" aria-selected="false" tabindex="-1">System Settings</a>
+
+                <a class="nav-link" id="third-party-settings-tab" data-bs-toggle="pill" href="#language-settings"
+                  role="tab" aria-controls="language-settings" aria-selected="false" tabindex="-1">Language Settings</a>
+
+                <a class="nav-link" id="mail-settings-tab" data-bs-toggle="pill" href="#mail-settings" role="tab"
+                  aria-controls="mail-settings" aria-selected="false" tabindex="-1">Mail Settings</a>
+
+                <a class="nav-link" id="email-template-tab" data-bs-toggle="pill" href="#email-template" role="tab"
+                  aria-controls="email-template" aria-selected="false" tabindex="-1">Email Template</a>
+
+                <h5>Purchase Manage</h5>
+                <a class="nav-link" id="aiConfig-tab" data-bs-toggle="pill" href="#aiConfig" role="tab"
+                  aria-controls="aiConfig" aria-selected="false" tabindex="-1">Purchase</a>
+
+                <a class="nav-link" id="use_ai_in-tab" data-bs-toggle="pill" href="#use_ai_in" role="tab"
+                  aria-controls="use_ai_in" aria-selected="false" tabindex="-1">Purchase Return</a>
+                <h5>Sales Manage</h5>
+                <a class="nav-link" id="mail-gateway-tab" data-bs-toggle="pill" href="#mail-gateway" role="tab"
+                  aria-controls="mail-gateway" aria-selected="false" tabindex="-1">Sales</a>
+
+                <a class="nav-link" id="sms-gateway-tab" data-bs-toggle="pill" href="#sms-gateway" role="tab"
+                  aria-controls="sms-gateway" aria-selected="false" tabindex="-1">Sales Return</a>
+                <h5>Inventory Manage</h5>
+                <a class="nav-link" id="warehouse_management_tab" data-bs-toggle="pill" href="#warehouse_management" role="tab"
+                  aria-controls="warehouse_management" aria-selected="false" tabindex="-1">Warehouse</a>
+
+                <a class="nav-link" id="adjustment_tab" data-bs-toggle="pill" href="#adjustment" role="tab"
+                  aria-controls="adjustment" aria-selected="false" tabindex="-1">Adjustment</a>
+
+                <a class="nav-link" id="transfer_tab" data-bs-toggle="pill" href="#transfer" role="tab"
+                  aria-controls="transfer" aria-selected="false" tabindex="-1">Transfer</a>
+
+                <h5>Accounting</h5>
+                <a class="nav-link" id="create_ticket_tab" data-bs-toggle="pill" href="#account" role="tab"
+                  aria-controls="account" aria-selected="false" tabindex="-1">Account</a>
+                <a class="nav-link" id="deposit_tab" data-bs-toggle="pill" href="#deposit" role="tab"
+                  aria-controls="deposit" aria-selected="false" tabindex="-1">Deposit</a>
+                <a class="nav-link" id="transaction_tab" data-bs-toggle="pill" href="#transaction" role="tab"
+                  aria-controls="transaction" aria-selected="false" tabindex="-1">Transaction</a>
+                <a class="nav-link" id="expense_type_tab" data-bs-toggle="pill" href="#expense_type" role="tab"
+                  aria-controls="expense_type" aria-selected="false" tabindex="-1">Expense Type</a>
+                <a class="nav-link" id="expense_tab" data-bs-toggle="pill" href="#expense" role="tab"
+                  aria-controls="expense" aria-selected="false" tabindex="-1">Expense</a>
+                <h5>User Manage</h5>
+                <a class="nav-link" id="supplier_tab" data-bs-toggle="pill" href="#supplier" role="tab"
+                  aria-controls="supplier" aria-selected="false" tabindex="-1">Supplier</a>
+                <a class="nav-link" id="customer_tab" data-bs-toggle="pill" href="#customer" role="tab"
+                  aria-controls="ticket_response" aria-selected="false" tabindex="-1">Customer</a>
+                <a class="nav-link" id="role_tab" data-bs-toggle="pill" href="#role" role="tab"
+                  aria-controls="role" aria-selected="false" tabindex="-1">Role</a>
+                <a class="nav-link" id="staff_tab" data-bs-toggle="pill" href="#staff" role="tab"
+                  aria-controls="staff" aria-selected="false" tabindex="-1">Staff</a>
+                <h5>Report</h5>
+                <a class="nav-link" id="profit_loss_report_tab" data-bs-toggle="pill" href="#profit_loss_report" role="tab"
+                  aria-controls="profit_loss_report" aria-selected="false" tabindex="-1">Profit Loss Report</a>
+                <a class="nav-link" id="stock_report_tab" data-bs-toggle="pill" href="#stock_report" role="tab"
+                  aria-controls="stock_report" aria-selected="false" tabindex="-1">Stock Report</a>
+                <a class="nav-link" id="supplier_payment_report_tab" data-bs-toggle="pill" href="#supplier_payment_report" role="tab"
+                  aria-controls="supplier_payment_report" aria-selected="false" tabindex="-1">Supplier Payment Report</a>
+                <a class="nav-link" id="customer_payment_report_tab" data-bs-toggle="pill" href="#customer_payment_report" role="tab"
+                  aria-controls="customer_payment_report" aria-selected="false" tabindex="-1">Customer Payment Report</a>
+                <a class="nav-link" id="purchase_report_tab" data-bs-toggle="pill" href="#purchase_report" role="tab"
+                  aria-controls="purchase_report" aria-selected="false" tabindex="-1">Purchase Report</a>
+                <a class="nav-link" id="sales_report_tab" data-bs-toggle="pill" href="#sales_report" role="tab"
+                  aria-controls="sales_report" aria-selected="false">Sales Report</a>
+                <a class="nav-link" id="product_report_tab" data-bs-toggle="pill" href="#product_report" role="tab"
+                  aria-controls="product_report" aria-selected="false" tabindex="-1">Product Report</a>
+                <a class="nav-link" id="payment_sales_report_tab" data-bs-toggle="pill" href="#payment_sales_report" role="tab"
+                  aria-controls="payment_sales_report" aria-selected="false" tabindex="-1">Payment Sales Report</a>
+                <a class="nav-link" id="payment_purchase_report_tab" data-bs-toggle="pill" href="#payment_purchase_report" role="tab"
+                  aria-controls="payment_purchase_report" aria-selected="false">Payment Purchase Report</a>
+                <a class="nav-link" id="payment_sale_return_report_tab" data-bs-toggle="pill" href="#payment_sale_return_report" role="tab"
+                  aria-controls="payment_sale_return_report" aria-selected="false">Payment Sale Return Report</a>
+                <a class="nav-link" id="payment_purchase_return_report_tab" data-bs-toggle="pill" href="#payment_purchase_return_report" role="tab"
+                  aria-controls="payment_purchase_return_report" aria-selected="false">Payment Purchase Return Report</a>
+                <h5>Others</h5>
+                <a class="nav-link" id="support-tab" data-bs-toggle="pill" href="#support" role="tab"
+                  aria-controls="support" aria-selected="false" tabindex="-1">Support</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+        <div class="col">
+          <main class="main">
+            <div class="document-body">
+              <div class="document-container">
+                <div class="tab-content" id="v-pills-tabContent">
+                  <!-- ======Overview====== -->
+                  <div class="tab-pane fade active show" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <small> Welcome </small>
+                        <h2 class="article-title">
+                          Prime Stock PHP Script Installation Process
+                        </h2>
+                        <p>
+                          This documentation file provides a comprehensive
+                          guide for installing and configuring PrimeStock,
+                          inventory management system. While the installation
+                          process is straightforward, certain instructions may
+                          assume a basic familiarity with database management
+                          and server file handling.
+                        </p>
+                      </div>
+
+                      <div class="article-content">
+                        <p>
+                          If you encounter difficulties or lack experience
+                          with any of the steps outlined here, don't hesitate
+                          to contact our
+                          <a href="https://support.pixelprimesoft.xyz/">support team for assistance.</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ======Changelog====== -->
+                  <div class="tab-pane fade" id="changelog" role="tabpanel" aria-labelledby="changelog-tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <small> Changelog </small>
+                        <h2 class="article-title">
+                          Version Updates: Enhancing Our Software
+                        </h2>
+                        <p>
+                          Discover the latest enhancements we've made to our
+                          software. Experience the future of communication
+                          with these exciting updates!
+                        </p>
+                      </div>
+                      <div class="article-content">
+                        <!-- version 1.0 -->
+                        <div class="timeline-wrapper style-2">
+                          <div class="timeline-line"></div>
+                          <div class="timeline-item-wrapper">
+                            <div class="timeline-item left">
+                              <div class="timeline-info">
+                                <div class="body">
+                                  <h6>Version 1.0 [15 October 2024]</h6>
+                                  <ul>
+                                    <li>Initial Release</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="timeline-icon">
+                              <span>1.0</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ======Server Requirement====== -->
+                  <div class="tab-pane fade" id="server" role="tabpanel" aria-labelledby="server-tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <small> Requirements </small>
+                        <h2 class="article-title">
+                          Server/System Requirements
+                        </h2>
+                        <p>
+                          Before installing this script, ensure that your
+                          server meets the following requirements:
+                        </p>
+                      </div>
+
+                      <div class="article-content">
+                        <h5>Requirements information</h5>
+                        <ul>
+                          <li>
+                            <strong>PHP Version 7.3 or above</strong>
+                          </li>
+                          <li>
+                            <strong>MySQL Version 5.7+ or MariaDB version
+                              10.2+</strong>
+                          </li>
+                          <li>
+                            <strong>Ctype PHP Extension</strong>
+                          </li>
+                          <li>
+                            <strong>Fileinfo PHP extension</strong>
+                          </li>
+                          <li>
+                            <strong>JSON PHP Extension</strong>
+                          </li>
+                          <li>
+                            <strong>Mbstring PHP Extension</strong>
+                          </li>
+                          <li>
+                            <strong>OpenSSL PHP Extension</strong>
+                          </li>
+                          <li>
+                            <strong>PDO PHP Extension</strong>
+                          </li>
+                          <li>
+                            <strong>PDO_MYSQL PHP Extension</strong>
+                          </li>
+                          <li>
+                            <strong>Tokenizer PHP Extension</strong>
+                          </li>
+
+                          <li>
+                            <strong>XML PHP Extension</strong>
+                          </li>
+
+                          <li>
+                            <strong>CURL PHP Extension</strong>
+                          </li>
+
+                          <li>
+                            <strong>GD PHP Extension</strong>
+                          </li>
+                          <li>
+                            <strong>Folder Permission 775/777</strong>
+                          </li>
+                        </ul>
+                        <p>
+                          These requirements are essential to guarantee a
+                          smooth installation and optimal performance of the
+                          script. Make sure your server environment aligns
+                          with these specifications before proceeding with the
+                          installation process.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ======localhost====== -->
+                  <div class="tab-pane fade" id="localhost" role="tabpanel" aria-labelledby="localhost-tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <small> Installation Process </small>
+                        <h2 class="article-title">
+                          Offline Installation Guide for PrimeStock
+                        </h2>
+                        <p>
+                          Follow these steps to successfully install your
+                          PrimeStock on your localhost PC:
+                        </p>
+                      </div>
+
+                      <div class="article-content">
+                        <h5>Step 1: Extract ZIP and Place Files</h5>
+                        <ol>
+                          <li>
+                            Extract the main installation files from the
+                            downloaded archive.
+                          </li>
+                          <li>
+                            Then go to script folder and extract prime_stock.zip. After that copy this file and paste it in <code>www</code> directory (for WAMP) or
+                            <code>htdocs</code>
+                            directory (for XAMPP).
+                          </li>
+                        </ol>
+
+                        <div class="docu-img">
+                          <img src="./assets/images/extract_file.png" />
+                        </div>
+
+                        <h5>Step 2: Create a Database</h5>
+                        <ol>
+                          <li>
+                            Open your web browser and navigate to phpMyAdmin.
+                          </li>
+                          <li>
+                            Create a new database that will be used by
+                            application.
+                          </li>
+                        </ol>
+                        <div class="docu-img">
+                          <img src="./assets/images/database_create.png" />
+                        </div>
+
+                        <h5>Step 3: Access the Installation Wizard</h5>
+                        <ol>
+                          <li>Launch your web browser.</li>
+                          <li>
+                            Enter the following URL in the address bar:
+                            <code>http://localhost/myscript</code> (replace
+                            <code>myscript</code> with the appropriate folder
+                            name you used in Step 2).
+                          </li>
+                        </ol>
+                        <div class="docu-img">
+                          <img src="./assets/images/s-1.png" />
+                        </div>
+                        <h5>Step 4: Installation Wizard</h5>
+                        <ol>
+                          <li>
+                            The installation wizard will load, Now Enter
+                            Database Details
+                            <div class="docu-img w-50">
+                              <img src="./assets/images/s-2.png" />
+                            </div>
+                          </li>
+                          <li>
+                            The wizard check all extension and PHP version are
+                            suitable or not
+                            <div class="docu-img w-50">
+                              <img src="./assets/images/s-3.png" />
+                            </div>
+                          </li>
+                          <li>
+                            Also this step check all permission and ready to
+                            install
+                            <div class="docu-img w-50 d-flex">
+                              <img src="./assets/images/s-4.png" />
+                            </div>
+                          </li>
+                          <li>
+                            Follow the steps in the installation wizard until
+                            you reach the final step.
+                          </li>
+                        </ol>
+
+                        <h5>Step 5: Installation Success</h5>
+                        <ol>
+                          <li>
+                            Once the installation is successful, you will see
+                            a message confirming the installation.
+                          </li>
+                          <div class="docu-img w-50 d-flex">
+                            <img src="./assets/images/s-6.png" />
+                          </div>
+                          <li>
+                            The message will also provide you with default
+                            access credentials for logging in.
+                          </li>
+                        </ol>
+
+                        <pre>
+                                                        For Admin Default Aceess
+                                                        Username: admin@gmail.com
+                                                        Password: password
+                                                    </pre>
+
+                        <p>
+                          Please note that these steps are a general
+                          guideline. Depending on your local server
+                          configuration and any specific instructions provided
+                          with the script, there might be slight variations in
+                          the installation process. Always refer to the
+                          script's documentation or readme file for any
+                          additional information.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ======category====== -->
+                  <div class="tab-pane fade" id="category" role="tabpanel" aria-labelledby="update_file_upload-tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <small> Category Management </small>
+                        <h2 class="article-title">
+                          Category Management Guide for
+                          <PrimeStock></PrimeStock>
+                        </h2>
+                        <p>
+                          Follow these steps to successfully manage category
+                          your PrimeStock:
+                        </p>
+                      </div>
+
+                      <div class="article-content">
+                        <h5>Step 1: Go to Category on the Left Sidebar</h5>
+                        <div class="docu-img">
+                          <img src="./assets/images/update_files/update_1.png" />
+                        </div>
+                        <h5>
+                          Step 2: Click on Edit Icon of that category table
+                        </h5>
+                        <p>
+                          When you click on edit icon a form will appear,
+                          where you can edit the category name
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/update_files/update_2.png" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======brand====== -->
+                  <div class="tab-pane fade" id="brand" role="tabpanel" aria-labelledby="processed_update-tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <small> Brand Management </small>
+                        <h2 class="article-title">
+                          Brand Management Tutorial for PixelDesk
+                        </h2>
+                        <p>
+                          To manage your brands effectively using PixelDesk,
+                          follow these steps:
+                        </p>
+                      </div>
+
+                      <div class="article-content">
+                        <h5>Step 1: Accessing Brand Management</h5>
+                        <ol>
+                          <li>
+                            Navigate to the brand management section within
+                            your PixelDesk sidebar.
+                            <div class="docu-img">
+                              <img src="./assets/images/brand_management/brand_1.png" alt="Step 1 Screenshot" />
+                            </div>
+                          </li>
+                        </ol>
+
+                        <h5>Step 2: Adding a New Brand</h5>
+                        <ol>
+                          <li>
+                            Click on the 'Save Changes' button to create a new
+                            brand entry.
+                            <div class="docu-img">
+                              <img src="./assets/images/brand_management/brand_2.png" alt="Step 2 Screenshot" />
+                            </div>
+                          </li>
+                        </ol>
+
+                        <h5>Step 3: Editing Existing Brands</h5>
+                        <ol>
+                          <li>
+                            Locate the brand you wish to edit and click on the
+                            edit icon next to it.
+                            <div class="docu-img">
+                              <img src="./assets/images/brand_management/brand_3.png" alt="Step 3 Screenshot" />
+                            </div>
+                          </li>
+                        </ol>
+
+                        <p class="text-info">
+                          <big>Tip:</big>
+                          <span>Regularly review and update your brand
+                            information to ensure accuracy and consistency
+                            across your platform.</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======unit====== -->
+                  <div class="tab-pane fade" id="unit" role="tabpanel" aria-labelledby="processed_update-tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <small> Unit Management </small>
+                        <h2 class="article-title">
+                          Unit Management Tutorial for PixelDesk
+                        </h2>
+                        <p>
+                          To manage your units effectively using PixelDesk,
+                          follow these steps:
+                        </p>
+                      </div>
+
+                      <div class="article-content">
+                        <h5>Step 1: Accessing Unit Management</h5>
+                        <ol>
+                          <li>
+                            Navigate to the unit management section within
+                            your PixelDesk sidebar.
+                            <div class="docu-img">
+                              <img src="./assets/images/unit_management/unit_1.png" alt="Step 1 Screenshot" />
+                            </div>
+                          </li>
+                        </ol>
+
+                        <h5>Step 2: Adding a New Unit</h5>
+                        <ol>
+                          <li>
+                            Click on the 'Add Unit' button to create a new
+                            unit entry.
+                            <div class="docu-img">
+                              <img src="./assets/images/unit_management/unit_2.png" alt="Step 2 Screenshot" />
+                            </div>
+                          </li>
+                        </ol>
+
+                        <h5>Step 3: Editing Existing Units</h5>
+                        <ol>
+                          <li>
+                            Locate the unit you wish to edit and click on the
+                            edit icon next to it.
+                            <div class="docu-img">
+                              <img src="./assets/images/unit_management/unit_3.png" alt="Step 3 Screenshot" />
+                            </div>
+                          </li>
+                        </ol>
+
+                        <p class="text-info">
+                          <big>Tip:</big>
+                          <span>Regularly review and update your unit information
+                            to ensure accuracy and consistency across your
+                            platform.</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======variation====== -->
+                  <div class="tab-pane fade" id="variation" role="tabpanel" aria-labelledby="processed_update-tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <small> Variation Management </small>
+                        <h2 class="article-title">
+                          Managing Variations in PixelDesk
+                        </h2>
+                        <p>
+                          To effectively manage variations in PixelDesk,
+                          follow these steps:
+                        </p>
+                      </div>
+
+                      <div class="article-content">
+                        <h5>Step 1: Accessing Variation Management</h5>
+                        <ol>
+                          <li>
+                            Navigate to the variation management section
+                            within your PixelDesk sidebar.
+                            <div class="docu-img">
+                              <img src="./assets/images/variation_management/variation_1.png" alt="Step 1 Screenshot" />
+                            </div>
+                          </li>
+                        </ol>
+
+                        <h5>Step 2: Adding a New Variation</h5>
+                        <ol>
+                          <li>
+                            Click on the 'Save Chnages' button to create a new
+                            variation entry.
+                            <div class="docu-img">
+                              <img src="./assets/images/variation_management/variation_2.png" alt="Step 2 Screenshot" />
+                            </div>
+                          </li>
+                        </ol>
+
+                        <h5>Step 3: Editing Existing Variations</h5>
+                        <ol>
+                          <li>
+                            Locate the variation you wish to edit and click on
+                            the edit icon next to it.
+                            <div class="docu-img">
+                              <img src="./assets/images/variation_management/variation_3.png" alt="Step 3 Screenshot" />
+                            </div>
+                          </li>
+                        </ol>
+
+                        <p class="text-info">
+                          <big>Tip:</big>
+                          <span>Regularly review and update your variation
+                            information to ensure accuracy and consistency
+                            across your platform.</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======product====== -->
+                  <div class="tab-pane fade" id="product" role="tabpanel" aria-labelledby="processed_update-tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <small> Product Management </small>
+                        <h2 class="article-title">
+                          Managing Products in PixelDesk
+                        </h2>
+                        <p>
+                          To effectively manage products in PixelDesk, follow
+                          these steps:
+                        </p>
+                      </div>
+
+                      <div class="article-content">
+                        <h5>Step 1: Accessing Product Management</h5>
+                        <ol>
+                          <li>
+                            Navigate to the product section within your
+                            PixelDesk sidebar.
+                            <div class="docu-img">
+                              <img src="./assets/images/product_management/product_1.png" alt="Step 1 Screenshot" />
+                            </div>
+                          </li>
+                        </ol>
+
+                        <h5>Step 2: Filter Product</h5>
+                        <ol>
+                          <li>
+                            You can filter product by brand, category, unit,
+                            product type and product status etc.
+                            <div class="docu-img">
+                              <img src="./assets/images/product_management/product_2.png" alt="Step 2 Screenshot" />
+                            </div>
+                          </li>
+                        </ol>
+
+                        <h5>Step 3: View Variant Product Price</h5>
+                        <ol>
+                          <li>
+                            In Product List, Click on price column view icon
+                            to view variant product price
+                            <div class="docu-img">
+                              <img src="./assets/images/product_management/product_3.png" alt="Step 3 Screenshot" />
+                            </div>
+                            <div class="docu-img">
+                              <img src="./assets/images/product_management/product_4.png" alt="Step 3 Screenshot" />
+                            </div>
+                          </li>
+                        </ol>
+
+                        <h5>Step 4: Add Product</h5>
+                        <ol>
+                          <li>
+                            Click on the 'Add Product' button then fill all
+                            required field to create a new product entry.
+                            <div class="docu-img">
+                              <img src="./assets/images/product_management/product_5.png" alt="Step 4 Screenshot" />
+                            </div>
+                          </li>
+                          <li>
+                            Select Product Type single if product type is
+                            single else select product type variant. After
+                            select single type product enter single price and
+                            sale price and Alert Quantity.
+                            <div class="docu-img">
+                              <img src="./assets/images/product_management/product_6.png" alt="Step 4 Screenshot" />
+                            </div>
+                          </li>
+                          <li>
+                            Select Product Type variant if product type is
+                            variant. After select variant type product Select
+                            variation after that select variation value. You
+                            can select multiple variation value. After that
+                            enter price, sale price and alert quantity
+                            variation wise.
+                            <div class="docu-img">
+                              <img src="./assets/images/product_management/product_7.png" alt="Step 4 Screenshot" />
+                            </div>
+                          </li>
+                        </ol>
+                        <h5>Step 5: Edit Product</h5>
+                        <ol>
+                          <li>
+                            Locate the product you want to edit and click on
+                            the 'Edit' button next to it.
+                            <div class="docu-img">
+                              <img src="./assets/images/product_management/product_8.png" alt="Step 5 Screenshot" />
+                            </div>
+                          </li>
+                          <li>
+                            Make the necessary changes to the product
+                            information, such as updating the product name,
+                            description, price, or stock quantity.
+                            <div class="docu-img">
+                              <img src="./assets/images/product_management/product_9.png" alt="Step 5 Screenshot" />
+                            </div>
+                          </li>
+                          <li>
+                            Click 'Update Product' to apply the updates to the
+                            product.
+                            <div class="docu-img">
+                              <img src="./assets/images/product_management/product_10.png" alt="Step 5 Screenshot" />
+                            </div>
+                          </li>
+                        </ol>
+                        <h5>Step 6: Stock check</h5>
+                        <ol>
+                          <li>
+                            Click on the 'Stock Check' button to view the
+                            current stock levels warehouse wise of this
+                            products.
+                            <div class="docu-img">
+                              <img src="./assets/images/product_management/product_11.png" alt="Step 6 Screenshot" />
+                            </div>
+                            <div class="docu-img">
+                              <img src="./assets/images/product_management/product_12.png" alt="Step 6 Screenshot" />
+                            </div>
+                          </li>
+                        </ol>
+
+                        <p class="text-info">
+                          <big>Tip:</big>
+                          <span>Regularly review and update your product
+                            information to ensure accuracy and consistency
+                            across your platform.</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======print labels====== -->
+                  <div class="tab-pane fade" id="print_labels" role="tabpanel" aria-labelledby="print_labels-tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <small> Print Labels Tutorials </small>
+                        <h2 class="article-title">
+                          Print Labels Tutorials for PixelDesk
+                        </h2>
+                        <p>
+                          To print labels using your PixelDesk software,
+                          follow these steps:
+                        </p>
+                      </div>
+
+                      <div class="article-content">
+                        <h5>Step 1: Open the Label Printing Tool</h5>
+                        <ol>
+                          <li>
+                            Once you've successfully logged into the admin
+                            panel, navigate to the Print Labels from the
+                            sidebar.
+                            <div class="docu-img">
+                              <img src="./assets/images/label_printing/label_1.png" alt="Step 1 Screenshot" />
+                            </div>
+                          </li>
+                        </ol>
+
+                        <h5>Step 2: Select the Warehouse and Product</h5>
+                        <ol>
+                          <li>
+                            In the label printing tool, select the warehouse
+                            and product you want to print labels for.
+                            <div class="docu-img">
+                              <img src="./assets/images/label_printing/label_2.png" alt="Step 2 Screenshot" />
+                            </div>
+                          </li>
+                          <li>
+                            After Select Product if the product type is
+                            variation then you need to select variation and
+                            quantity
+                            <div class="docu-img">
+                              <img src="./assets/images/label_printing/label_3.png" alt="Step 2 Screenshot" />
+                            </div>
+                          </li>
+                          <li>
+                            If Product Type is single then you need to enter
+                            quantity only.
+                            <div class="docu-img">
+                              <img src="./assets/images/label_printing/label_4.png" alt="Step 2 Screenshot" />
+                            </div>
+                          </li>
+                        </ol>
+
+                        <h5>Step 3: Choose Paper Size</h5>
+                        <ol>
+                          <li>
+                            After select product and quantity then choose
+                            paper size.
+                            <div class="docu-img">
+                              <img src="./assets/images/label_printing/label_5.png" alt="Step 3 Screenshot" />
+                            </div>
+                          </li>
+                          <li>
+                            After choose paper size in the preview you can see
+                            how many labels will be print on one paper.
+                            <div class="docu-img">
+                              <img src="./assets/images/label_printing/label_6.png" alt="Step 3 Screenshot" />
+                            </div>
+                          </li>
+                        </ol>
+
+                        <h5>Step 4: Print Labels</h5>
+                        <ol>
+                          <li>
+                            Click on the 'Print Labels' button to start the
+                            printing process.
+                            <div class="docu-img">
+                              <img src="./assets/images/label_printing/label_7.png" alt="Step 3 Screenshot" />
+                            </div>
+                          </li>
+                        </ol>
+                        <h5>Step 5: Refresh and Reset</h5>
+                        <ol>
+                          <li>
+                            In Preview Click on the Refresh button to refresh
+                            the label preview.
+                            <div class="docu-img">
+                              <img src="./assets/images/label_printing/label_8.png" alt="Step 3 Screenshot" />
+                            </div>
+                          </li>
+                          <li>
+                            In Preview Click on the Reset button to reset the
+                            label preview.
+                            <div class="docu-img">
+                              <img src="./assets/images/label_printing/label_9.png" alt="Step 3 Screenshot" />
+                            </div>
+                          </li>
+                        </ol>
+
+                        <p class="text-danger">
+                          <big>Note:</big>
+                          <span>Please make sure to check your printer settings
+                            before printing. We are not responsible for any
+                            printing errors.</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ======cpanel Server====== -->
+                  <div class="tab-pane fade" id="cpanel" role="tabpanel" aria-labelledby="cpanel-tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <small> Installation Process </small>
+                        <h2 class="article-title">
+                          Installation Guide for Prime Stock on cPanel
+                        </h2>
+                        <p>
+                          Follow these steps to successfully install your
+                          Prime Stock on your cPanel hosting:
+                        </p>
+                      </div>
+
+                      <div class="article-content">
+                        <h5>Step 1: Extract and Upload Files</h5>
+                        <ol>
+                          <li>
+                            Extract the main installation files from the
+                            downloaded archive.
+                          </li>
+                          <li>
+                            After that you can find two folder script and Documents. Go to script folder and Upload this prime_stock.zip file in you cpanel file manager.
+                          </li>
+                          <div class="article-content">
+                            <img src="./assets/images/cp_file_manager.png" />
+                          </div>
+                        </ol>
+
+                        <h5>Step 2: Create a Database</h5>
+                        <ol>
+                          <li>
+                            Log in to your cPanel account.
+                            <div class="article-content">
+                              <img src="./assets/images/cp_db_create_0.png" />
+                            </div>
+                          </li>
+
+                          <li>
+                            Navigate to the MySQL Databases section and create
+                            a new database for your Laravel application.
+                            <div class="article-content">
+                              <img src="./assets/images/cp_db_create_1.png" />
+                            </div>
+                          </li>
+                        </ol>
+
+                        <h5>Step 3: Configure Database</h5>
+                        <ol>
+                          <li>
+                            While still in cPanel, go to the MySQL Databases
+                            section and create a new database user.
+                            <div class="article-content">
+                              <img src="./assets/images/cp_db_create_2.png" />
+                            </div>
+                          </li>
+                          <li>
+                            Assign the user to the database you created and
+                            grant necessary privileges.
+                            <div class="article-content">
+                              <img src="./assets/images/cp_db_create_3.png" />
+                              <img src="./assets/images/cp_db_create_4.png" />
+                            </div>
+                          </li>
+                        </ol>
+
+                        <h5>Step 4: Access the Installation Wizard</h5>
+                        <ol>
+                          <li>Launch your web browser.</li>
+                          <li>
+                            Enter the following URL in the address bar:
+                            <code>http://yourdomain.com</code> or
+                            <code>http://yourdomain.com/myscript</code>
+                            (replace <code>myscript</code> with the
+                            appropriate folder name you used in Step 1).
+                          </li>
+                        </ol>
+                        <div class="docu-img">
+                          <img src="./assets/images/s-1.png" />
+                        </div>
+                        <h5>Step 5: Installation Wizard</h5>
+                        <ol>
+                          <li>
+                            The installation wizard will load, Now Enter
+                            Database Details
+                            <div class="docu-img w-50">
+                              <img src="./assets/images/s-2.png" />
+                            </div>
+                          </li>
+                          <li>
+                            This Wizard Will checking if your server meets the
+                            requirements. Make sure your server meets all the
+                            requirements listed.
+                            <div class="docu-img w-50">
+                              <img src="./assets/images/s-3.png" />
+                            </div>
+                          </li>
+                          <li>
+                            The wizard will also check for necessary file
+                            permissions. If any file or directory requires
+                            permissions changes, follow the instructions
+                            provided.
+                            <div class="docu-img w-50 d-flex">
+                              <img src="./assets/images/s-4.png" />
+                            </div>
+                          </li>
+                          <li>
+                            Follow the steps in the installation wizard until
+                            you reach the final step.
+                          </li>
+                        </ol>
+
+                        <h5>Step 6: Installation Success</h5>
+                        <ol>
+                          <li>
+                            Once the installation is successful, you will see
+                            a message confirming the installation.
+                          </li>
+                          <div class="docu-img w-50 d-flex">
+                            <img src="./assets/images/s-6.png" />
+                          </div>
+                          <li>
+                            The message will also provide you with default
+                            access credentials for logging in.
+                          </li>
+                        </ol>
+                        <pre>
+                                                        For Admin Default Aceess
+                                                        Username: admin@gmail.com
+                                                        Password: password
+                                                    </pre>
+                        <p>
+                          Please keep in mind that the steps provided are
+                          general guidelines. Depending on your hosting
+                          provider and any specific instructions from the
+                          script's documentation, the installation process
+                          might have variations. Always refer to the script's
+                          documentation or readme for any specific guidance.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ======System Settings====== -->
+                  <div class="tab-pane fade" id="app-settings" role="tabpanel" aria-labelledby="app-settings-tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <small> System Settings </small>
+                        <h2 class="article-title">
+                          System Settings of Pixel Desk.
+                        </h2>
+                        <br />
+                        <b>First Navigate To The System Settings From The
+                          Sidebar</b>
+                      </div>
+                      <div class="docu-img">
+                        <img src="./assets/images/pixeldesk/Settings/step_1.png" />
+                      </div>
+                      <p>
+                        You can change the system settings as per your
+                        requirements. after changing the settings click on the
+                        "Submit" button to save the changes.
+                      </p>
+                      <div class="docu-img">
+                        <img src="./assets/images/pixeldesk/Settings/step_2.png" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ======Language Settings====== -->
+                  <div class="tab-pane fade" id="language-settings" role="tabpanel"
+                    aria-labelledby="language-settings-tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <small> Language Settings </small>
+                        <h2 class="article-title">
+                          Configure Languages in PixelDesk.
+                        </h2>
+                        <p>
+                          PixelDesk app allows you to add, edit, set default,
+                          and change language keywords.
+                        </p>
+                        <p>
+                          First Navigate To The Language Settings From The
+                          Sidebar
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Language/step_1.png" />
+                        </div>
+                        <p>
+                          After Navigate To The Language Settings Click On The
+                          "Add Language" Button To Add A New Language.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Language/step_2.png" />
+                        </div>
+                      </div>
+                      <div class="article-content">
+                        <ul>
+                          <h5>Add Language</h5>
+                          <li>
+                            Admin can add a new language to the system.
+                            <div class="docu-img">
+                              <img src="./assets/images/pixeldesk/Language/step_3.png" />
+                            </div>
+                            <p>
+                              After Clicking On The "Add Language" Button the
+                              language will show on language list.
+                            </p>
+                          </li>
+                          <li>
+                            <h5>Edit Language</h5>
+                            <br />
+                            Admin can edit the existing language settings form
+                            click on edit icon from the language list.
+                            <div class="docu-img">
+                              <img src="./assets/images/pixeldesk/Language/step_4.png" />
+                            </div>
+                            <p>
+                              After Clicking On The Edit Icon The Language
+                              Will Show On The Form.
+                            </p>
+                            <div class="docu-img">
+                              <img src="./assets/images/pixeldesk/Language/step_5.png" />
+                            </div>
+                            <p>
+                              After Editing The Language Click On The "Update"
+                              Button To Save The Changes.
+                            </p>
+                          </li>
+                          <li>
+                            <h5>Set Default Language</h5>
+                            <br />
+                            Admin can set the default language for the system.
+                            When you add or edit a language, you can set it as
+                            the default language by clicking on the "Default
+                            Language" yes button.
+                            <div class="docu-img">
+                              <img src="./assets/images/pixeldesk/Language/step_6.png" />
+                            </div>
+                            <p class="text-danger">
+                              Note: Only one language can be set as the
+                              default language at a time.
+                            </p>
+                          </li>
+                          <li>
+                            <h5>Change Language Keyword</h5>
+                            <br />
+                            Admin can change the keyword for a specific
+                            language. For example, if you want to change the
+                            keyword for the "English" language, you can click
+                            on the "Change Keyword" button.
+                            <div class="docu-img">
+                              <img src="./assets/images/pixeldesk/Language/step_7.png" />
+                            </div>
+                            <p>
+                              After Clicking On The "Change Keyword" Button
+                              The Language Will Show On The Table.
+                            </p>
+                            <div class="docu-img">
+                              <img src="./assets/images/pixeldesk/Language/step_8.png" />
+                            </div>
+                            <p>
+                              After Click on update icon the modal will show
+                              you the keyword that you want to change.
+                            </p>
+                            <div class="docu-img">
+                              <img src="./assets/images/pixeldesk/Language/step_9.png" />
+                            </div>
+                            <p>
+                              After Clicking On The "Update" Button The
+                              Language Will Show On The Table.
+                            </p>
+                          </li>
+                          <li>
+                            <h5>Delete Language</h5>
+                            <br />
+                            Admin can delete the language from the system.
+                            <div class="docu-img">
+                              <img src="./assets/images/pixeldesk/Language/step_10.png" />
+                            </div>
+                            <p>
+                              After Clicking On The "Delete" Button The
+                              Language Will Be Deleted From The System.
+                            </p>
+                            <p class="text-warning">
+                              Note: The default language cannot be deleted.
+                            </p>
+                          </li>
+                          <li>
+                            <h5>Sync Missing Translations Keywords</h5>
+                            <br />
+                            Admin can sync the missing translations keywords
+                            for a specific language.
+                            <div class="docu-img">
+                              <img src="./assets/images/pixeldesk/Language/step_11.png" />
+                            </div>
+                            <p>
+                              After Clicking On The "Sync Missing
+                              Translations" Button Missing Translations
+                              Keywords Will Be Synced.
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ======Mail Settings====== -->
+                  <div class="tab-pane fade" id="mail-settings" role="tabpanel" aria-labelledby="mail-settings-tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <small> Mail Settings </small>
+                        <h2 class="article-title">
+                          Mail Settings of Pixel Desk.
+                        </h2>
+                        <br />
+                        <b>First Navigate To The Mail Settings From The
+                          Sidebar</b>
+                      </div>
+                      <div class="docu-img">
+                        <img src="./assets/images/pixeldesk/Settings/step_3.png" />
+                      </div>
+                      <p>
+                        You can change the mail settings as per your
+                        requirements. after changing the settings click on the
+                        "Submit" button to save the changes.
+                      </p>
+                      <div class="docu-img">
+                        <img src="./assets/images/pixeldesk/Settings/step_4.png" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ======Email Settings====== -->
+                  <div class="tab-pane fade" id="email-template" role="tabpanel" aria-labelledby="email-template-tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <small> Email Template Settings </small>
+                        <h2 class="article-title">
+                          Email Template Settings of Pixel Desk.
+                        </h2>
+                        <br />
+                        <b>First Navigate To The Email Template From The
+                          Sidebar</b>
+                      </div>
+                      <div class="docu-img">
+                        <img src="./assets/images/pixeldesk/Settings/step_5.png" />
+                      </div>
+                      <p>
+                        You can see the template list. For Edit template click
+                        the Edit Icon
+                      </p>
+                      <div class="docu-img">
+                        <img src="./assets/images/pixeldesk/Settings/step_6.png" />
+                      </div>
+                      <p>
+                        After Clicking On The Edit Icon The Template Will Be
+                        Shown On The Form.
+                      </p>
+                      <div class="docu-img">
+                        <img src="./assets/images/pixeldesk/Settings/step_7.png" />
+                      </div>
+                      <p>
+                        After Editing The Template Click On The "Update
+                        Template" Button To Save The Changes.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- ======Purchase====== -->
+                  <div class="tab-pane fade" id="aiConfig" role="tabpanel" aria-labelledby="aiConfig-tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <small> Purchase Manage </small>
+                        <h2 class="article-title">
+                          Manage Purchase for your inventory items.
+                        </h2>
+                        <p>
+                          Streamline your purchasing process with PrimeStock's cutting-edge tools. Our platform ensures
+                          efficient purchase management, offering precise and tailored responses to customer inquiries,
+                          and guaranteeing a smooth and fulfilling experience for all users.
+                        </p>
+                      </div>
+
+                      <div class="article-content">
+                        <li>
+                          <h5>Purchase List</h5>
+                          <br />
+                          First navigate to the All Purchase from the sidebar.
+                        </li>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Purchase/1.png" />
+                        </div>
+                        <b>You can filter the purchase list by date, status, and other criteria.</b>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Purchase/2.png" />
+                        </div>
+                        <h5>Purchase Details</h5>
+                        <p>
+                          Click on the "View" button to view the details of a specific purchase.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Purchase/3.png" />
+                        </div>
+                        <p>
+                          Click Print Invoice to print the invoice of the purchase.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Purchase/4.png" />
+                        </div>
+                        <h5>Add Purchase</h5>
+                        <p>
+                          Click on the "Add Purchase" button to add a new purchase.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Purchase/5.png" />
+                        </div>
+                        <p>
+                          Search the product using name or code by using the search bar. And select the product from the
+                          list.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Purchase/6.png" />
+                        </div>
+                        <p>
+                          Select the product and if the product is variant then a modal will show you the variant of the
+                          product. and select the variant of value and quantity.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Purchase/7.png" />
+                        </div>
+                        <p>
+                          After selecting the value and quantity click on the "Submit" button to add the product to the
+                          cart. Ans product will be added to the purchase.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Purchase/8.png" />
+                        </div>
+                        <p>
+                          if the product is single no variant then auto add to the purchase.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Purchase/9.png" />
+                        </div>
+                        <p>
+                          You can add tax and discount to the purchase. Also paid amount and due amount will be shown in
+                          the purchase.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Purchase/10.png" />
+                        </div>
+                        <p>
+                          After adding the purchase click on the "Submit" button to save the purchase.
+                        </p>
+
+                        <h5>Edit Purchase</h5>
+                        <p>
+                          Click on the "Edit" button to edit the purchase.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Purchase/11.png" />
+                        </div>
+                        <p>
+                          After clicking on the "Edit" button the purchase details will be shown on the form.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Purchase/12.png" />
+                        </div>
+                        <p>
+                          After editing the purchase click on the "Update" button to save the purchase.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Purchase/13.png" />
+                        </div>
+                        <p>
+                          After clicking on the "Update" button the purchase will be updated.
+                        </p>
+                        <h5>Supplier Give Payment</h5>
+                        <p>
+                          Click on the "Give Payment" button to purchase list. This button is shown when has supplier
+                          due.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Purchase/14.png" />
+                        </div>
+                        <p>
+                          After clicking on the "Give Payment" button a modal will be open. Fill up the form and click
+                          on the "Submit" button to give payment to the supplier.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Purchase/15.png" />
+                        </div>
+                        <p>
+                          After clicking on the "Submit" button the payment will be given to the supplier.
+                        </p>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="use_ai_in" role="tabpanel" aria-labelledby="use_ai_in-tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <small> Purchase Return </small>
+                        <h2 class="article-title">
+                          Manage Purchase Return for your inventory items.
+                        </h2>
+                        <h5>Purchase Return</h5>
+                        <p>
+                          From the purchase list click on the "Return" button to return the purchase.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Purchase_Return/1.png" />
+                        </div>
+                        <p>
+                          After clicking on the "Return" button redirect to the purchase return page. Fill up the form
+                          and click on the "Submit" button to return the purchase.
+                          You cannot input the quantity more than the purchase quantity & Stock quantity.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Purchase_Return/2.png" />
+                        </div>
+                        <p>
+                          After clicking on the "Return" button the purchase will be returned.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Purchase_Return/3.png" />
+                        </div>
+                        <p>
+                          After clicking on the "Return" button the purchase will be returned.And you will be redirected
+                          to the purchase return page.
+                        </p>
+                        <h5>Purchase Return List</h5>
+                        <p>
+                          From the purchase return list click on the "Purchase Return" From the sidebar menu.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Purchase_Return/4.png" />
+                        </div>
+                        <p>
+                          You can filter the purchase return list by date, status, and other criteria.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Purchase_Return/5.png" />
+                        </div>
+                        <h5>View Purchase Return</h5>
+                        <p>
+                          Click on the "View" button to view the purchase return.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Purchase_Return/6.png" />
+                        </div>
+                        <p>
+                          You can print as a invoice. To print the invoice click on the "Print" button.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Purchase_Return/7.png" />
+                        </div>
+                        <h5>Edit Purchase Return</h5>
+                        <p>
+                          Click on the "Edit" button to edit the purchase return.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Purchase_Return/8.png" />
+                        </div>
+                        <p>
+                          After clicking on the "Edit" button the purchase return details will be shown on the form.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Purchase_Return/9.png" />
+                        </div>
+                        <p>
+                          Change the quantity and click on the "Update" button to update the purchase return.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Purchase_Return/10.png" />
+                        </div>
+                        <p>
+                          After clicking on the "Update" button the purchase return will be updated.
+                        </p>
+                        <h5>Received Payment</h5>
+                        <p>
+                          Click on the "Received Payment" button to received payment. Received payment is shown when has
+                          due payment.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Purchase_Return/11.png" />
+                        </div>
+                        <p>
+                          After clicking on the "Received Payment" button a modal will be open. Fill up the form and
+                          click on the "Submit" button to received payment.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Purchase_Return/12.png" />
+                        </div>
+                        <p>
+                          After clicking on the "Submit" button the payment will be received.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ======Sales Management====== -->
+                  <div class="tab-pane fade" id="mail-gateway" role="tabpanel" aria-labelledby="mail-gateway-tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <small> Sales Management </small>
+                        <h2 class="article-title">
+                          Manage Sales for your inventory items.
+                        </h2>
+                        <p>
+                          Prime Stock Sales Management module is designed to streamline inventory management processes.
+                          You can manage your sale, sale return, invoice and invoice return. Also Pay amount and due
+                          amount will be shown in the sales.
+                        </p>
+                      </div>
+
+                      <div class="article-content">
+                        <h5>Step 1: Sale List</h5>
+                        <p>
+                          From the sale list click on the "All Sales" From the sidebar menu.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/sale/1.png" alt="download image" />
+                        </div>
+                        <p>
+                          You can filter the sale list by date, status, and other criteria.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/sale/2.png" alt="download image" />
+                        </div>
+
+                        <h5>Step 2: Add Sale</h5>
+                        <p>
+                          Click on the "Add New" button to add a new sale from the sale list.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/sale/7.png" alt="download image" />
+                        </div>
+                        <p>
+                          Search the product using name or code by using the search bar. And select the product from the
+                          list.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/sale/8.png" alt="download image" />
+                        </div>
+                        <p>
+                          Select the product and if the product is variant then a modal will show you the variant of the
+                          product. and select the variant of value and quantity.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/sale/9.png" alt="download image" />
+                        </div>
+                        <p>
+                          After selecting the value and quantity click on the "Submit" button to add the product to the
+                          cart. Ans product will be added to the sale.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/sale/10.png" alt="download image" />
+                        </div>
+                        <p>
+                          if the product is single no variant then auto add to the sale.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/sale/11.png" alt="download image" />
+                        </div>
+                        <p>
+                          <b>Note that you cannot input quantity more than the stock quantity.</b>
+                        </p>
+                        <p>
+                          You can add tax and discount to the sale. Also received amount and due amount will be shown in
+                          the sale.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/sale/12.png" alt="download image" />
+                        </div>
+                        <p>
+                          After adding the sale click on the "Submit" button to save the sale.
+                        </p>
+
+                        <h5>Step 3: Sale Details</h5>
+                        <p>
+                          Click on the "View" button to view the details of a specific sale.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/sale/3.png" alt="download image" />
+                        </div>
+                        <p>
+                          Click Print Invoice to print the invoice of the sale.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/sale/4.png" alt="download image" />
+                        </div>
+                        <h5>Step 4: Edit Sale</h5>
+                        <p>
+                          Click on the "Edit" button to edit the sale.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/sale/5.png" alt="download image" />
+                        </div>
+                        <p>
+                          After clicking on the "Edit" button the sale details will be shown on the form.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/sale/6.png" alt="download image" />
+                        </div>
+                        <p>
+                          After clicking on the "Update" button the sale will be updated.
+                        </p>
+                        <h5>Step 4: Received Payment</h5>
+                        <p>
+                          Click on the "Received Payment" button to received payment. Received payment is shown when has
+                          due payment.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/sale/13.png" alt="download image" />
+                        </div>
+                        <p>
+                          After clicking on the "Received Payment" button a modal will be open. Fill up the form and
+                          click on the "Submit" button to received payment.
+                        </p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/sale/14.png" alt="download image" />
+                        </div>
+                        <p>
+                          After clicking on the "Submit" button the payment will be received.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ======Sale Return ====== -->
+                  <div class="tab-pane fade" id="sms-gateway" role="tabpanel" aria-labelledby="sms-gateway-tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <small> Sale Return Setup </small>
+                        <h2 class="article-title">
+                          Manage Sale Return of Prime Stock.
+                        </h2>
+                        <p>
+                          Prime Stock Sale Return Management module is designed to streamline inventory management
+                          processes.
+                          You can manage your sale return, invoice return. Also Pay amount and due amount will be shown
+                          in the sale return.
+                        </p>
+                      </div>
+
+                      <div class="article-content">
+                        <h5>Step 1: From the sale list click on the "Return" button to return the sale.</h5>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Sale_Return/step_1.png" alt="download image" />
+                        </div>
+                        <h5>Step 2: After clicking on the "Return" button redirect to the sale return page. Fill up the
+                          form and click on the "Submit" button to return the sale. You cannot input the quantity more
+                          than the sale quantity & Stock quantity.</h5>
+
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Sale_Return/step_2.png" alt="download image" />
+                        </div>
+                        <h5>Step 3: After clicking on the "Return" button the purchase will be returned.</h5>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Sale_Return/step_3.png" alt="download image" />
+                        </div>
+                        <p>After clicking on the "Return" button the sale will be returned.And you will be
+                          redirected to the sale return page.</p>
+                        <h5>Step 4: Sale Return List</h5>
+                        <p>From the sale return list click on the "Sale Return" From the sidebar menu.</p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Sale_Return/step_4.png" alt="download image" />
+                        </div>
+                        <p>You can filter the sale return list by date, status, and other criteria.</p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Sale_Return/step_5.png" alt="download image" />
+                        </div>
+                        <h5>Step 5: View Sale Return</h5>
+                        <p>Click on the "View" button to view the details of a specific sale return.</p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Sale_Return/step_6.png" alt="download image" />
+                        </div>
+                        <p>You can print as a invoice. To print the invoice click on the "Print" button.</p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Sale_Return/step_7.png" alt="download image" />
+                        </div>
+                        <h5>Step 6: Edit Sale Return</h5>
+                        <p>Click on the "Edit" button to edit the sale return.</p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Sale_Return/step_8.png" alt="download image" />
+                        </div>
+                        <p>After clicking on the "Edit" button the sale return details will be shown on the form.</p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Sale_Return/step_9.png" alt="download image" />
+                        </div>
+                        <p>Change the quantity and click on the "Update" button to update the sale return.</p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Sale_Return/step_10.png" alt="download image" />
+                        </div>
+                        <p>After clicking on the "Update" button the sale return will be updated.</p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Sale_Return/step_11.png" alt="download image" />
+                        </div>
+                        <h5>Step 7: Received Payment</h5>
+                        <p>Click on the "Received Payment" button to received payment. Received payment is shown when has due payment.</p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Sale_Return/step_12.png" alt="download image" />
+                        </div>
+                        <p>After clicking on the "Received Payment" button a modal will be open. Fill up the form and click on the "Submit" button to received payment.</p>
+                        <div class="docu-img">
+                          <img src="./assets/images/pixeldesk/Sale_Return/step_13.png" alt="download image" />  
+                        </div>
+                        <p>After clicking on the "Submit" button the payment will be received.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======Warehouse Management====== -->
+                  <div class="tab-pane fade" id="warehouse_management" role="tabpanel" aria-labelledby="warehouse_management_tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <small> How To Use - Step 01 </small>
+                        <h2 class="article-title">Warehouse Management</h2>
+                        <p>
+                          Manage your warehouse operations with ease using
+                          Prime Stock Admin Panel.
+                        </p>
+                      </div>
+
+                      <div class="article-content">
+                        <ol>
+                          <li>
+                            <strong>Navigate:</strong> Select the "Warehouse" option from the menu.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Warehouse_Management/step_1.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Add New:</strong> Click on the "Add New"
+                            button to add new warehouse. After Click Add new button a form modal will be open.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Warehouse_Management/step_2.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Submit:</strong> After filling up the form, click on the "Add" button to save the new warehouse.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Warehouse_Management/step_3.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Edit:</strong> Click on the "Edit" button to edit the warehouse. After clicking on the "Edit" button the warehouse details will be shown on the form in modal.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Warehouse_Management/step_4.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Update:</strong> After editing the warehouse details, click on the "Update" button to save the changes.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Warehouse_Management/step_5.png" alt="download image" />
+                          </div>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======Adjustment Management====== -->
+                  <div class="tab-pane fade" id="adjustment" role="tabpanel" aria-labelledby="adjustment_tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <h2 class="article-title">
+                          Adjustment Management
+                        </h2>
+                        <p>
+                          Manage your adjustment operations with ease using Prime Stock Admin Panel.
+                        </p>
+                      </div>
+
+                      <div class="article-content">
+                        <ol>
+                          <li>
+                            <strong>Navigate:</strong> Select the "Adjustment" option from the menu.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Adjustment/step_1.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Add New:</strong> Click on the "Add New" button to get a form.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Adjustment/step_2.png" alt="download image" />
+                          </div>
+                          <li>
+                            Search the product using name or code by using the search bar. And select the product from the list.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Adjustment/step_3.png" alt="download image" />
+                          </div>
+                          <li>
+                            After selecting the product, fill up the form and click on the "Submit" button to save the adjustment.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Adjustment/step_4.png" alt="download image" />
+                          </div>
+                          <li>
+                            After clicking on the "Submit" button the adjustment will be saved.
+                          </li>
+                          <li>
+                            You can Edit Adjustment by clicking on the "Edit" button.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Adjustment/step_5.png" alt="download image" />
+                          </div>
+                          <li>
+                            After clicking on the "Edit" button the adjustment details will be shown on the form in modal.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Adjustment/step_6.png" alt="download image" />
+                          </div>
+                          <li>
+                            After clicking on the "Update" button the adjustment will be updated.
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ============Transfer Management============ -->
+                  <div class="tab-pane fade" id="transfer" role="tabpanel" aria-labelledby="transfer_tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <h2 class="article-title">Transfer Management</h2>
+                        <p>
+                          Manage your transfer operations with ease using Prime Stock Admin Panel.
+                        </p>
+                      </div>
+                      <div class="article-content">
+                        <ol>
+                          <li>
+                            <strong>Navigate:</strong> Select the "Transfer" option from the menu.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Transfer/step_1.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Add New:</strong> Click on the "Add New" button to get a form.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Transfer/step_2.png" alt="download image" />
+                          </div>
+                          <li>
+                            After click Add new a form will be open. Fill up the form and click on the "Submit" button to save the transfer.
+                            <strong>Note:</strong> Before searching for a product, you must select the "From Warehouse".
+                            Search the product using name or code by using the search bar. And select the product from the list.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Transfer/step_3.png" alt="download image" />
+                          </div>
+                          <li>
+                            After selecting the product, fill up the form and click on the "Submit" button to save the transfer.
+                          </li>
+                          <li>
+                            <strong>Note:</strong> You cannot input transfer quantity more than Current Stock.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Transfer/step_4.png" alt="download image" />
+                          </div>
+                          <li>
+                            After clicking on the "Submit" button the transfer will be saved.
+                          </li>
+                          <li>
+                            You can Edit Transfer by clicking on the "Edit" button.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Transfer/step_5.png" alt="download image" />
+                          </div>
+                          <li>
+                            After clicking on the "Edit" button the transfer details will be shown on the form in modal.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Transfer/step_6.png" alt="download image" />
+                          </div>
+                          <li>
+                            After clicking on the "Update" button the transfer will be updated.
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======account====== -->
+                  <div class="tab-pane fade" id="account" role="tabpanel" aria-labelledby="account_tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <h2 class="article-title">Account Management</h2>
+                        <p>
+                          Manage your account operations with ease using Prime Stock Admin Panel.
+                        </p>
+                      </div>
+                      <div class="article-content">
+                        <ol>
+                          <li>
+                            <strong>Navigate:</strong> Select the "Account" option from the menu.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Account/1.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Add New:</strong>Then click on the "Add New" button.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Account/2.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Fill The Form:</strong> Then fill up the form with the appropriate data.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Account/3.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Submit:</strong> After filling up the entire form click "Save Changes" button.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Account/4.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Edit:</strong> Click on the "Edit" button to edit the account.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Account/5.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Update:</strong> After editing the account details, click on the "Update" button to save the changes.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Account/6.png" alt="download image" />
+                          </div>                          
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======deposit====== -->
+                  <div class="tab-pane fade" id="deposit" role="tabpanel" aria-labelledby="deposit_tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <h2 class="article-title">
+                          Deposit Management
+                        </h2>
+                      </div>
+
+                      <div class="article-content">                       
+
+                        <ol>
+                          <li>
+                            <strong>Navigate:</strong> Select the "Deposit" option from the menu.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Deposit/1.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Add New:</strong> Click on the "Add New" button to get a form.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Deposit/2.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Submit:</strong> After filling up the form, click on the "Submit" button to save the deposit.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Deposit/3.png" alt="download image" />
+                          </div>
+                          <li>
+                            After clicking on the "Submit" button the deposit will be saved.
+                          </li>
+                          <li>
+                            You can Edit Deposit by clicking on the "Edit" button.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Deposit/4.png" alt="download image" />
+                          </div>
+                          <li>
+                            After clicking on the "Update" button the deposit will be updated.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Deposit/5.png" alt="download image" />
+                          </div>
+                        </ol>                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======transaction====== -->
+                  <div class="tab-pane fade" id="transaction" role="tabpanel" aria-labelledby="transaction_tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <h2 class="article-title">
+                          Transaction Management
+                        </h2>
+                      </div>
+
+                      <div class="article-content">                        
+                        <ol>
+                          <li>
+                            <strong>Navigate:</strong> Select the "Transaction" option from the menu.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Transaction/1.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Filter:</strong> You can filter the transaction by using the filter option.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Transaction/2.png" alt="download image" />
+                          </div>
+                        </ol>                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======expense_type====== -->
+                  <div class="tab-pane fade" id="expense_type" role="tabpanel" aria-labelledby="expense_type_tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <h2 class="article-title">
+                          Expense Type Management
+                        </h2>
+                      </div>
+
+                      <div class="article-content">                       
+
+                        <ol>
+                          <li>
+                            <strong>Navigate:</strong> Select the "Expense Type" option from the menu.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Expense_Type/1.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Add New:</strong> Click on the "Add New" button to get a form.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Expense_Type/2.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Submit:</strong> After filling up the form, click on the "Submit" button to save the expense type.
+                          </li>
+                          <li>
+                          <strong> Edit:</strong> Click on the "Edit" button to edit the expense type.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Expense_Type/3.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Update:</strong> After editing the expense type details, click on the "Update" button to save the changes.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Expense_Type/4.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Delete:</strong> Click on the "Delete" button to delete the expense type.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Expense_Type/5.png" alt="download image" />
+                          </div>
+                        </ol>                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======expense====== -->
+                  <div class="tab-pane fade" id="expense" role="tabpanel" aria-labelledby="expense_tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <h2 class="article-title">
+                          Expense Management
+                        </h2>
+                      </div>
+
+                      <div class="article-content">                       
+
+                        <ol>
+                          <li>
+                            <strong>Navigate:</strong> Select the "Expense" option from the menu.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Expense/1.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Add New:</strong> Click on the "Add New" button to get a form.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Expense/2.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Submit:</strong> After filling up the form, click on the "Save Changes" button to save the expense.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Expense/3.png" alt="download image" />
+                          </div>
+                          <li>
+                          <strong> Edit:</strong> Click on the "Edit" button to edit the expense.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Expense/4.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Update:</strong> After editing the expense details, click on the "Update" button to save the changes.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Expense/5.png" alt="download image" />
+                          </div>                          
+                        </ol>                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======supplier====== -->
+                  <div class="tab-pane fade" id="supplier" role="tabpanel" aria-labelledby="supplier_tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <h2 class="article-title">
+                          Supplier Management
+                        </h2>
+                      </div>
+
+                      <div class="article-content">                       
+
+                        <ol>
+                          <li>
+                            <strong>Navigate:</strong> Select the "Supplier" option from the menu.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Supplier/1.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Add New:</strong> Click on the "Add New" button to get a form.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Supplier/2.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Submit:</strong> After filling up the form, click on the "Save Changes" button to save the supplier.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Supplier/3.png" alt="download image" />
+                          </div>
+                          <li>
+                          <strong> Edit:</strong> Click on the "Edit" button to edit the supplier.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Supplier/4.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Update:</strong> After editing the supplier details, click on the "Update" button to save the changes.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Supplier/5.png" alt="download image" />
+                          </div>   
+                          <li>
+                            if supplier Payable or Receivable is more than 0, you can pay or receive amount by clicking on the "Payment"
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Supplier/6.png" alt="download image" />
+                          </div>   
+                          <li>
+                            After clicking on the "Payment" button, you will see the payment details. For clear payment details click on the "Clear" button.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Supplier/7.png" alt="download image" />
+                          </div> 
+                          <li>
+                            After clicking on the "Clear" button the modal will be shown with payable amount and clear payment button. Click on the "Clear Payment" button to clear the payment.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Supplier/8.png" alt="download image" />
+                          </div>                   
+                        </ol>                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======customer====== -->
+                  <div class="tab-pane fade" id="customer" role="tabpanel" aria-labelledby="customer_tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <h2 class="article-title">
+                          Customer Management
+                        </h2>
+                      </div>
+
+                      <div class="article-content">                       
+
+                        <ol>
+                          <li>
+                            <strong>Navigate:</strong> Select the "Customer" option from the menu.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Customer/1.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Add New:</strong> Click on the "Add New" button to get a form.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Customer/2.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Submit:</strong> After filling up the form, click on the "Save Changes" button to save the customer.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Customer/3.png" alt="download image" />
+                          </div>
+                          <li>
+                          <strong> Edit:</strong> Click on the "Edit" button to edit the customer.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Customer/4.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Update:</strong> After editing the customer details, click on the "Update" button to save the changes.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Customer/5.png" alt="download image" />
+                          </div>   
+                          <li>
+                            if customer Payable or Receivable is more than 0, you can pay or receive amount by clicking on the "Payment"
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Customer/6.png" alt="download image" />
+                          </div>   
+                          <li>
+                            After clicking on the "Payment" button, you will see the payment details. For clear payment details click on the "Clear" button.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Customer/7.png" alt="download image" />
+                          </div> 
+                          <li>
+                            After clicking on the "Clear" button the modal will be shown with payable amount and clear payment button. Click on the "Clear Payment" button to clear the payment.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Customer/8.png" alt="download image" />
+                          </div>      
+                          <li>
+                            For notify customer click on the "Notify Customer" button.
+                          </li>             
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Customer/9.png" alt="download image" />
+                          </div>             
+                          <li>
+                            Write subject and message and click on the "Notify Customer" button.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Customer/10.png" alt="download image" />
+                          </div>             
+                        </ol>                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======role====== -->
+                  <div class="tab-pane fade" id="role" role="tabpanel" aria-labelledby="role_tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <h2 class="article-title">
+                          Role Management
+                        </h2>
+                      </div>
+
+                      <div class="article-content">                       
+
+                        <ol>
+                          <li>
+                            <strong>Navigate:</strong> Select the "Role" option from the menu.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Role/1.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Add New:</strong> Click on the "Add New" button to get a form.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Role/2.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Submit:</strong> After filling up the form, click on the "Save Changes" button to save the role.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Role/3.png" alt="download image" />
+                          </div>
+                          <li>
+                          <strong> Edit:</strong> Click on the "Edit" button to edit the role.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Role/4.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Update:</strong> After editing the role details, click on the "Update" button to save the changes.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Role/5.png" alt="download image" />
+                          </div> 
+                          <li>
+                            For delete role click on the "Delete" button.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Role/6.png" alt="download image" />
+                          </div>                                       
+                        </ol>                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======staff====== -->
+                  <div class="tab-pane fade" id="staff" role="tabpanel" aria-labelledby="staff_tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <h2 class="article-title">
+                          Staff Management
+                        </h2>
+                      </div>
+
+                      <div class="article-content">                       
+
+                        <ol>
+                          <li>
+                            <strong>Navigate:</strong> Select the "Staff" option from the menu click on the "All Staff" menu.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Staff/1.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Add New:</strong> Click on the "Add New" button to get a form.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Staff/2.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Submit:</strong> After filling up the form, click on the "Save Changes" button to save the staff. 
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Staff/3.png" alt="download image" />
+                          </div>
+                          <li>
+                          <strong> Edit:</strong> Click on the "Edit" button to edit the staff. 
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Staff/4.png" alt="download image" />
+                          </div>
+                          <li>
+                            <strong>Update:</strong> After editing the staff details, click on the "Update" button to save the changes. 
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Staff/5.png" alt="download image" />
+                          </div> 
+                          <li>
+                            You cannot ban superadmin user. You can ban other users. Also unban user by clicking on the "Unban" button.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Staff/6.png" alt="download image" />
+                          </div>                                       
+                        </ol>                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======profit_loss_report====== -->
+                  <div class="tab-pane fade" id="profit_loss_report" role="tabpanel" aria-labelledby="profit_loss_report_tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <h2 class="article-title">
+                          View Profit Loss Report
+                        </h2>
+                      </div>
+
+                      <div class="article-content">                       
+
+                        <ol>
+                          <li>
+                            <strong>Navigate:</strong> Select the "Profit Loss Report" option from the "Reports" menu.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Report/1.png" alt="download image" />
+                          </div>                                                              
+                        </ol>                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======stock_report====== -->
+                  <div class="tab-pane fade" id="stock_report" role="tabpanel" aria-labelledby="stock_report_tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <h2 class="article-title">
+                          View Stock Report
+                        </h2>
+                      </div>
+
+                      <div class="article-content">                       
+
+                        <ol>
+                          <li>
+                            <strong>Navigate:</strong> Select the "Stock Report" option from the "Reports" menu.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Report/2.png" alt="download image" />
+                          </div>    
+                          <li>
+                            You need to first select warehouse and then click Filter button.
+                          </li>  
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Report/3.png" alt="download image" />
+                          </div>  
+                          <li>
+                            After clicking on the Filter button, you will see the stock report selected warehouse wise.
+                          </li>        
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Report/4.png" alt="download image" />
+                          </div>                                                                                                  
+                        </ol>                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======supplier_payment_report====== -->
+                  <div class="tab-pane fade" id="supplier_payment_report" role="tabpanel" aria-labelledby="supplier_payment_report_tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <h2 class="article-title">
+                          View Supplier Payment Report
+                        </h2>
+                      </div>
+
+                      <div class="article-content">                       
+
+                        <ol>
+                          <li>
+                            <strong>Navigate:</strong> Select the "Supplier Payment Report" option from the "Reports" menu.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Report/5.png" alt="download image" />
+                          </div>                                                              
+                        </ol>                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======customer_payment_report====== -->
+                  <div class="tab-pane fade" id="customer_payment_report" role="tabpanel" aria-labelledby="customer_payment_report_tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <h2 class="article-title">
+                          View Customer Payment Report
+                        </h2>
+                      </div>
+
+                      <div class="article-content">                       
+
+                        <ol>
+                          <li>
+                            <strong>Navigate:</strong> Select the "Customer Payment Report" option from the "Reports" menu.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Report/6.png" alt="download image" />
+                          </div>                                                              
+                        </ol>                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======purchase_report====== -->
+                  <div class="tab-pane fade" id="purchase_report" role="tabpanel" aria-labelledby="purchase_report_tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <h2 class="article-title">
+                          View Purchase Report
+                        </h2>
+                      </div>
+
+                      <div class="article-content">                       
+
+                        <ol>
+                          <li>
+                            <strong>Navigate:</strong> Select the "Purchase Report" option from the "Reports" menu.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Report/7.png" alt="download image" />
+                          </div>                                                              
+                        </ol>                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======sale_report====== -->
+                  <div class="tab-pane fade" id="sales_report" role="tabpanel" aria-labelledby="sales_report_tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <h2 class="article-title">
+                          View Sale Report
+                        </h2>
+                      </div>
+
+                      <div class="article-content">                       
+
+                        <ol>
+                          <li>
+                            <strong>Navigate:</strong> Select the "Sale Report" option from the "Reports" menu.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Report/8.png" alt="download image" />
+                          </div>                                                              
+                        </ol>                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======product_report====== -->
+                  <div class="tab-pane fade" id="product_report" role="tabpanel" aria-labelledby="product_report_tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <h2 class="article-title">
+                          View Product Report
+                        </h2>
+                      </div>
+
+                      <div class="article-content">                       
+
+                        <ol>
+                          <li>
+                            <strong>Navigate:</strong> Select the "Product Report" option from the "Reports" menu.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Report/9.png" alt="download image" />
+                          </div>                                                              
+                        </ol>                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======payment_sale_report====== -->
+                  <div class="tab-pane fade" id="payment_sales_report" role="tabpanel" aria-labelledby="payment_sales_report_tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <h2 class="article-title">
+                          View Payment Sale Report
+                        </h2>
+                      </div>
+
+                      <div class="article-content">                       
+
+                        <ol>
+                          <li>
+                            <strong>Navigate:</strong> Select the "Payment Sale Report" option from the "Reports" menu.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Report/10.png" alt="download image" />
+                          </div>                                                              
+                        </ol>                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======payment_purchase_report====== -->
+                  <div class="tab-pane fade" id="payment_purchase_report" role="tabpanel" aria-labelledby="payment_purchase_report_tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <h2 class="article-title">
+                          View Payment Purchase Report
+                        </h2>
+                      </div>
+
+                      <div class="article-content">                       
+
+                        <ol>
+                          <li>
+                            <strong>Navigate:</strong> Select the "Payment Purchase Report" option from the "Reports" menu.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Report/11.png" alt="download image" />
+                          </div>                                                              
+                        </ol>                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======payment_sale_return_report====== -->
+                  <div class="tab-pane fade" id="payment_sale_return_report" role="tabpanel" aria-labelledby="payment_sale_return_report_tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <h2 class="article-title">
+                          View Payment Sale Return Report
+                        </h2>
+                      </div>
+
+                      <div class="article-content">                       
+
+                        <ol>
+                          <li>
+                            <strong>Navigate:</strong> Select the "Payment Sale Return Report" option from the "Reports" menu.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Report/12.png" alt="download image" />
+                          </div>                                                              
+                        </ol>                        
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ======payment_purchase_return_report====== -->
+                  <div class="tab-pane fade" id="payment_purchase_return_report" role="tabpanel" aria-labelledby="payment_purchase_return_report_tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <h2 class="article-title">
+                          View Payment Purchase Return Report
+                        </h2>
+                      </div>
+
+                      <div class="article-content">                       
+
+                        <ol>
+                          <li>
+                            <strong>Navigate:</strong> Select the "Payment Purchase Return Report" option from the "Reports" menu.
+                          </li>
+                          <div class="docu-img">
+                            <img src="./assets/images/pixeldesk/Report/13.png" alt="download image" />
+                          </div>                                                              
+                        </ol>                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ======support====== -->
+                  <div class="tab-pane fade" id="support" role="tabpanel" aria-labelledby="support-tab">
+                    <div class="article-body">
+                      <div class="article-content">
+                        <h2>Support</h2>
+                        <p>
+                          If you have any questions, encounter issues, or need
+                          assistance with PrimeStock, our support team is here
+                          to help.
+                        </p>
+                        <p>Please feel free to reach out to us at:</p>
+                        <p>
+                          <a href="https://support.pixelprimesoft.xyz/">Open Ticket</a>
+                        </p>
+                        <p>
+                          We aim to provide prompt and helpful responses to
+                          ensure you get the most out of PrimeStock.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="copy-right">
+          <p>
+            Copyright &copy; Pixel Prime Software 2023, All Rights Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./assets/js/jquery-3.7.0.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/simplebar.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

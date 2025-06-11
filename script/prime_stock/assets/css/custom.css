@@ -1,0 +1,169 @@
+
+/*Error Page Design*/
+.error-bg{
+    background-color: #FFFFFF;
+}
+
+.settings-file-upload {
+    width: 100% !important;
+    height: 8rem !important;
+    margin: 0 auto !important;
+}
+
+.search-card {
+    width: 17% !important;
+    position: absolute;
+    top: 85%;
+    left: 17%;
+}
+
+.search-card .card-text{
+    border-bottom: 1px dashed rgb(128, 128, 128);
+    padding-bottom: 5px;
+}
+
+.search-card .card-text:last-child{
+    border-bottom: none;
+}
+
+
+/*Floating Action Button Code*/
+.floatingButtonWrap {
+    display: block;
+    position: fixed;
+    bottom: 45px;
+    right: 45px;
+    z-index: 999999999;
+}
+
+.floatingButtonInner {
+    position: relative;
+}
+
+.floatingButton {
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background: #EE335E;
+    color: #fff;
+    line-height: 50px;
+    position: absolute;
+    border-radius: 50% 50%;
+    bottom: 0px;
+    right: 0px;
+    border: 5px solid #f15c7e;
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+.floatingButton .fa {
+    font-size: 15px !important;
+}
+
+.floatingButton.open,
+.floatingButton:hover,
+.floatingButton:focus,
+.floatingButton:active {
+    opacity: 1;
+    color: #fff;
+}
+
+
+.floatingButton .fa {
+    transform: rotate(0deg);
+    transition: all 0.4s;
+}
+
+.floatingButton.open .fa {
+    transform: rotate(270deg);
+}
+
+.floatingMenu {
+    position: absolute;
+    bottom: 60px;
+    right: 0px;
+    display: none;
+}
+
+.floatingMenu li {
+    width: 100%;
+    float: right;
+    list-style: none;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.floatingMenu li a {
+    padding: 8px 15px;
+    display: inline-block;
+    background: #ccd7f5;
+    color: #6077b0;
+    border-radius: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: all 0.4s;
+    -webkit-box-shadow: 1px 3px 5px rgba(211, 224, 255, 0.5);
+    box-shadow: 1px 3px 5px rgba(211, 224, 255, 0.5);
+}
+
+.floatingMenu li a:hover {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.form-control:focus {
+    border-color: #4466f2!important;
+    box-shadow: none;
+}
+
+.form-control {
+    padding: 0.688rem 0.938rem;
+    border-radius: .313rem;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding: .228rem .938rem !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 5px !important;
+}
+
+.btn-icon {
+    width: 2.813rem;
+    height: 2.813rem;
+    font-size: 1.35rem;
+    flex-shrink: 0;
+}
+
+.input-group-text {
+    font-size: 0.875rem;
+    border-radius: 0.3125rem;
+    background-color: rgba(var(--primary-rgb), 0.1);
+    border-color: rgba(var(--primary-rgb), 0.1);
+    color: rgb(var(--primary-rgb));
+    letter-spacing: 0;
+}
+
+#loader{
+    display: flex !important;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+    border: 1px solid #4466f2 !important;
+    background: #4466f2 !important;
+    font-weight: normal;
+    color: #fff;
+}
+
+.ui-widget-content .list-group-item:hover{
+    border: 1px solid #4466f2;
+    background: #4466f2;
+    font-weight: normal;
+    color: #fff;
+}
